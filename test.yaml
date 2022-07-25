@@ -1,0 +1,29 @@
+#! /bin/sh
+echo "I am learning devops which is so fun and important for CI/CD pipeline in any project" > test.yaml
+
+
+# Class- CIS156, and Section- 37884.
+# Chapter-4, and Exercise-13.
+# This program is written by: Bishnu Pandey
+
+# This program predicts the approximate size of a population of organisms.
+
+# Get the user input for the starting number of organisms.
+number = int(input("Inseart the starting number of organisms: "))
+
+# Perform the average daily increase by percentages.
+increasing_percentage = int(input("Inseart the average daily increase: "))
+
+# Get the user input to inseart the number of days.
+days = int(input("inseart the number of days: "))
+             
+# Display the days approximate with total number of population respectively.
+print("Days Approximate \tPopulation")
+for x in range(1, days+1):
+    if x >1:
+        increase = number*increasing_percentage /100
+        number += increase
+        # It displays the number of population up to three decimals places.
+        print(x, "\t\t\t\t", format(number, ".3f"))
+
+
